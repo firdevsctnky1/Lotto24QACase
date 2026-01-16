@@ -24,4 +24,14 @@ object TestData {
         isEuroJackpot = true
     )
 
+     //Lotto result without super number (edge case)
+    fun lottoWithoutSuperNumber(): LottoDomain = LottoDomain(
+        lottery = "6aus49",
+        lastDrawDate = "2026-01-14",
+        nextDrawDate = "2026-01-17",
+        numbers = listOf(5, 12, 19, 28, 34, 45),
+        superNumber = emptyList(),
+        isEuroJackpot = false
+    )
+
 }
